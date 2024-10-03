@@ -8,6 +8,7 @@ def login():
     if usrname == 'deepak' and passwd == '7034':
         f = 1
         print("Login successfully.......")
+        print(type(usrname))
     for i in emp:
         if i['id'] == usrname and i['password'] == passwd:
             f = 2

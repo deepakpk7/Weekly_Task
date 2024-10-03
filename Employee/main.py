@@ -1,5 +1,5 @@
 from auth import login
-from employee import add_emp, emp_update, delete_emp, view_profile, edit_profile, display_emp
+from employee import *
 
 while True:
     print("""
@@ -10,6 +10,8 @@ while True:
     
     if choices == 1:
         f, user = login()
+        print(f)
+        print(user)
         # Admin login
         if f == 1:
             while True:
@@ -38,7 +40,7 @@ while True:
         elif f == 0:
             print("# Invalid Username and Password #")
         # User login page
-        elif f == 2:
+        elif f==2:
             while True:
                 if user['dob'] == user['password']:
                     print("Create a New Password")

@@ -1,5 +1,4 @@
-emp = []
-
+from auth import emp 
 def add_emp():
     id = str(input("Enter Employee ID :"))
     f1 = 0
